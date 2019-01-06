@@ -11,7 +11,8 @@
     "build": "rollup -c",
     "prepublishOnly": "npm run build",
     "test": "jest",
-    "example": "cd example && rollup -c && sirv public"
+    "example": "cd example && rollup -c && sirv public",
+    "build:example": "cd example && rollup -c"
   },
   "dependencies": {
     "markdown-it": "^8.4.2"
