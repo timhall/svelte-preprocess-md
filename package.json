@@ -6,7 +6,10 @@
   "license": "MIT",
   "repository": "https://github.com/timhall/svelte-preprocess-md.git",
   "main": "index.js",
+  "module": "index.mjs",
   "scripts": {
+    "build": "rollup -c",
+    "prepublishOnly": "npm run build",
     "test": "jest",
     "example": "cd example && rollup -c && sirv public"
   },
@@ -27,5 +30,9 @@
     "markdown",
     "md",
     "mdx"
+  ],
+  "files": [
+    "index.js",
+    "index.mjs"
   ]
 }
