@@ -4,5 +4,5 @@ export default {
     { file: 'index.js', format: 'cjs' },
     { file: 'index.mjs', format: 'es' }
   ],
-  external: 'markdown-it'
+  external: ['path', 'markdown-it']
 };
