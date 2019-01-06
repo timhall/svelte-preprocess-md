@@ -1,0 +1,27 @@
+{
+  "name": "svelte-preprocess-md",
+  "version": "0.0.0",
+  "description": "Write svelte components as markdown files",
+  "author": "Tim Hall <tim.hall.engr@gmail.com>",
+  "license": "MIT",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "example": "cd example && rollup -c"
+  },
+  "dependencies": {
+    "markdown-it": "^8.4.2"
+  },
+  "devDependencies": {
+    "rollup": "^1.0.2",
+    "rollup-plugin-svelte": "^5.0.1",
+    "svelte": "^3.0.0-alpha16"
+  },
+  "keywords": [
+    "svelte",
+    "preprocess",
+    "markdown",
+    "md",
+    "mdx"
+  ]
+}
