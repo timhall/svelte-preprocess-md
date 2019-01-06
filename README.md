@@ -25,8 +25,36 @@ export default {
   plugins: [
     svelte({
       extensions: ['.md'],
-      preprocess: { markup: md() }
+      preprocess: md()
     })
   ]
 }
+```
+
+## API
+
+`md([options, extend])`
+
+- `options` - [markdown-it options](https://github.com/markdown-it/markdown-it#init-with-presets-and-options)
+- `extend` - Extend the markdown-it renderer
+
+```js
+// ...
+preprocess: md()
+
+preprocess: md({ linkify: true })
+
+preprocess: md(md => {
+  return md
+    .use(plugin1)
+    .use(plugin2, options);
+});
+
+preprocess: md(
+  { typographer: false},
+  md => {
+    return md
+      .use(plugin3);
+  }
+)
 ```
