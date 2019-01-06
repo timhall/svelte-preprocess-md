@@ -1,4 +1,4 @@
 node_modules
-index.js
-index.mjs
+/index.js
+/index.mjs
 example/public/bundle.*
