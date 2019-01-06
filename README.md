@@ -24,7 +24,7 @@ export default {
   // ...
   plugins: [
     svelte({
-      extensions: ['.md'],
+      extensions: ['.html', '.md'],
       preprocess: md()
     })
   ]

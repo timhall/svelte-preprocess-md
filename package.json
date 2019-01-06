@@ -8,14 +8,17 @@
   "main": "index.js",
   "scripts": {
     "test": "jest",
-    "example": "cd example && rollup -c"
+    "example": "cd example && rollup -c && sirv public"
   },
   "dependencies": {
     "markdown-it": "^8.4.2"
   },
   "devDependencies": {
     "rollup": "^1.0.2",
+    "rollup-plugin-commonjs": "^9.2.0",
+    "rollup-plugin-node-resolve": "^4.0.0",
     "rollup-plugin-svelte": "^5.0.1",
+    "sirv-cli": "^0.2.3",
     "svelte": "^3.0.0-alpha16"
   },
   "keywords": [
