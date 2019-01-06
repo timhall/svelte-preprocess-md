@@ -17,7 +17,7 @@
 
 ```js
 // rollup.config.js
-import svelte from 'rollup-plugin-svelte;
+import svelte from 'rollup-plugin-svelte';
 import md from 'svelte-preprocess-md';
 
 export default {
@@ -25,7 +25,7 @@ export default {
   plugins: [
     svelte({
       extensions: ['.md'],
-      preprocess: md()
+      preprocess: { markup: md() }
     })
   ]
 }
